@@ -1,0 +1,10 @@
+{
+  "name": "photo_gallery",
+  "version": "1.0.0",
+  "description": "Photo Gallery React component",
+  "main": "index.js",
+  "repository": "https://github.com/timgivois/photo_gallery",
+  "author": "Tim Givois",
+  "license": "MIT",
+  "private": true
+}
