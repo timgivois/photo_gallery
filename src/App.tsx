@@ -2,10 +2,11 @@ import React from 'react'
 
 import './App.scss'
 import photo from './assets/photo-1.jpg'
-import security from './assets/security.svg';
+import security from './assets/security.svg'
 import worldMap from './assets/world-map.svg'
 
-const App = () => (
+
+const App: React.StatelessComponent<{}> = () => (
     <div className='container'>
         <h1>Hello World, React!</h1>
         <div>
