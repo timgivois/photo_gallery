@@ -7,7 +7,7 @@ const devMode = process.env.NODE_ENV !== 'production';
 
 module.exports = {
     entry: './index.js',
-    devtool: "source-map",
+    devtool: 'source-map',
     output: {
         filename: 'bundle.[hash].js',
         path: path.resolve(__dirname, 'dist')
@@ -34,9 +34,9 @@ module.exports = {
                 exclude: /node_modules/
             },
             {
-                enforce: "pre",
+                enforce: 'pre',
                 test: /\.js$/,
-                loader: "source-map-loader"
+                loader: 'source-map-loader'
             },
             {
                 test: /\.jsx?$/,
