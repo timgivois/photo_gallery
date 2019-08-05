@@ -10,7 +10,6 @@ interface CarouselState {
 
 interface CarouselProps {
     images: ImageProps[],
-
 }
 
 class Carousel extends React.Component<CarouselProps, CarouselState> {
