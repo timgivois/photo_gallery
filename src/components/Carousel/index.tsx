@@ -1,5 +1,6 @@
 import React from 'react'
 
+import { Button } from 'semantic-ui-react'
 import Image, { ImageProps } from '../Image'
 import './Carousel.scss'
 
@@ -27,14 +28,16 @@ class Carousel extends React.Component<CarouselProps, CarouselState> {
 
     render() {
         const image = this.props.images[this.state.index]
+        const isPrevDisabled = this.state.index === 0
+        const isNextDisabled = this.state.index === this.props.images.length - 1
         return (
             <div className='Carousel-container'>
                 <Image 
                     {...image}
                 />
                 <div className='Carousel-Buttons'>
-                    <button onClick={this.handlePrevClick}>Previous</button>
-                    <button onClick={this.handleNextClick}>Next</button>
+                    <Button primary disabled={isPrevDisabled} onClick={this.handlePrevClick}>Previous</Button>
+                    <Button primary disabled={isNextDisabled} onClick={this.handleNextClick}>Next</Button>
                 </div>
             </div>
         )
